@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content='Jesteś naszym nowym użytkownikiem? Zarejestruj się, aby na bieżąco śledzić swoje zamówienia i otrzymywać informacje o nowościach.'>
+    <meta name="author" content="Agnieszka Uzarek">
+
+    <title>Formularz rejestracyjny | Kolorowy Świat</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/f3198f14e9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <form>
+        <div class="wrapper">
+            <h1>Zarejestruj się!</h1>
+            <div class="line"></div>
+
+            <div class="form-box">
+                <label for="username">Nazwa Użytkownika:</label>
+                <input type="text" id="username" placeholder="Podaj nazwę Użytkownika">
+                <p class="error-text">error</p>
+            </div>
+            <div class="form-box">
+                <label for="password">Hasło:</label>
+                <input type="password" id="password" placeholder="Wprowadź hasło do Twojego konta">
+                <p class="error-text">error</p>
+            </div>
+            <div class="form-box">
+                <label for="password2">Powtórz hasło:</label>
+                <input type="password" id="password2" placeholder="Powtórz hasło">
+                <p class="error-text">error</p>
+            </div>
+            <div class="form-box">
+                <label for="email">Adres e-mail:</label>
+                <input type="email" id="email" placeholder="Podaj swój adres e-mail">
+                <p class="error-text">error</p>
+            </div>
+
+            <div class="rodo-checkbox">
+                <input type="checkbox" id="rodo" checked>
+                <label for="rodo" class="rodo">Chcę otrzymywać newsetter i zapoznałem się z <span
+                        class="rodo-description">informacją o administratorze i przetwarzaniu danych</span>.</label>
+                <div class="rodo-infobox">
+                    <p>Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie danych
+                        osobowych w celu wysyłania informacji handlowej. </p>
+
+                    <p> Podanie danych jest dobrowolne. Zostałem poinformowany, że przysługuje mi prawo dostępu do
+                        swoich danych, możliwości ich poprawiania oraz żądania zaprzestania ich przetwarzania. </p>
+
+                    <p> Administratorem danych osobowych jest firma Kolorowy Świat ul. Wesoła 1 12-345 Tęcza</p>
+                </div>
+            </div>
+
+
+            <div class="control-buttons">
+                <button class="clear">Wyczyść</button>
+                <button class="send">Wyślij</button>
+            </div>
+        </div>
+        <div class="popup">
+            <p>Twój formularz został poprawnie wysłany :)</p>
+            <button class="close">Zamknij</button>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

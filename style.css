@@ -1,0 +1,188 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: 'Montserrat', sans-serif;
+	background: linear-gradient(
+			217deg,
+			rgba(255, 0, 0, 0.8),
+			rgba(255, 0, 0, 0) 70.71%
+		),
+		linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+		linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+}
+
+.wrapper {
+	padding: 35px;
+	font-size: 1.6rem;
+	width: 420px;
+	background-color: #fff;
+	border: 1px solid rgba(129, 0, 214, 0.45);
+	box-shadow: 0 0 30px rgba(129, 0, 214, 0.45);
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.line {
+	margin: 0 auto;
+	margin-bottom: 30px;
+	height: 6px;
+	width: 50%;
+	background: rgb(129, 0, 214);
+	border: none;
+	border-radius: 6px;
+}
+
+.form-box {
+	margin-bottom: 12px;
+}
+
+.form-box label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-box input {
+	width: 100%;
+	padding: 10px;
+
+	font-size: 1.2rem;
+	border: 1px solid rgb(197, 197, 197);
+	border-radius: 6px;
+}
+
+.form-box.error input {
+	border: 1px solid rgb(129, 0, 214);
+	background: rgba(129, 0, 214, 0.09);
+}
+
+.form-box .error-text {
+	margin: 5px 0 0 10px;
+	font-size: 1.4rem;
+	color: rgb(129, 0, 214);
+	visibility: hidden;
+}
+
+.form-box.error .error-text {
+	visibility: visible;
+}
+
+.rodo-checkbox {
+	position: relative;
+	display: flex;
+	font-size: 1.1rem;
+}
+
+.rodo-checkbox .rodo-description {
+	color: rgb(129, 0, 214);
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.rodo-checkbox input {
+	cursor: pointer;
+}
+
+.rodo-checkbox .rodo {
+	margin-left: 10px;
+}
+
+.rodo-checkbox .rodo-infobox {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	margin-bottom: 5px;
+	bottom: 25px;
+	padding: 10px;
+	height: 160px;
+	width: 350px;
+	color: rgb(200, 200, 200);
+	background-color: rgba(59, 0, 99, 0.93);
+	border: 1px solid black;
+	box-shadow: 0 0 15px rgba(129, 0, 214, 0.45);
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.rodo-infobox.show-rodo-infobox {
+	opacity: 1;
+}
+
+.control-buttons {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 22px;
+}
+
+.send,
+.clear,
+.close {
+	display: block;
+	padding: 10px 0;
+	margin-left: 10px;
+	width: 100px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.4rem;
+	background-color: rgb(129, 0, 214);
+	color: #fff;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.send:hover,
+.clear:hover,
+.close:hover {
+	background-color: rgb(75, 0, 124);
+}
+
+.popup {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	position: absolute;
+	top: -300px;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 700px;
+	height: 200px;
+	background-color: #fff;
+	border-radius: 6px;
+	border: 2px solid black;
+	transition: top 0.6s;
+}
+
+.popup p {
+	font-size: 2.8rem;
+}
+
+.popup .close {
+	margin-top: 20px;
+}
+
+.show-popup {
+	top: 50%;
+}
+
+.blur {
+	background: rgba(255, 255, 255, 0.2);
+	filter: blur(8px);
+}
