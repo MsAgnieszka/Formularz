@@ -108,7 +108,8 @@ body {
 	flex-direction: column;
 	position: absolute;
 	margin-bottom: 5px;
-	bottom: 25px;
+	bottom: 5px;
+	left: 355px;
 	padding: 10px;
 	height: 160px;
 	width: 350px;
