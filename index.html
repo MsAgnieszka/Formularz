@@ -24,36 +24,37 @@
 <body>
 
     <form>
-        <div class="wrapper">
-            <h1>Zarejestruj się!</h1>
-            <div class="line"></div>
+        <div class="registration-form">
+            <h1 class="registration-form__header">Zarejestruj się!</h1>
+            <div class="registration-form__underline"></div>
 
-            <div class="form-box">
+            <div class="registration-form__form-box">
                 <label for="username">Nazwa Użytkownika:</label>
                 <input type="text" id="username" placeholder="Podaj nazwę Użytkownika">
                 <p class="error-text">error</p>
             </div>
-            <div class="form-box">
+            <div class="registration-form__form-box">
                 <label for="password">Hasło:</label>
                 <input type="password" id="password" placeholder="Wprowadź hasło do Twojego konta">
                 <p class="error-text">error</p>
             </div>
-            <div class="form-box">
+            <div class="registration-form__form-box">
                 <label for="password2">Powtórz hasło:</label>
                 <input type="password" id="password2" placeholder="Powtórz hasło">
                 <p class="error-text">error</p>
             </div>
-            <div class="form-box">
+            <div class="registration-form__form-box">
                 <label for="email">Adres e-mail:</label>
                 <input type="email" id="email" placeholder="Podaj swój adres e-mail">
                 <p class="error-text">error</p>
             </div>
 
-            <div class="rodo-checkbox">
-                <input type="checkbox" id="rodo" checked>
-                <label for="rodo" class="rodo">Chcę otrzymywać newsetter i zapoznałem się z <span
-                        class="rodo-description">informacją o administratorze i przetwarzaniu danych</span>.</label>
-                <div class="rodo-infobox">
+            <div class="registration-form__rodo-checkbox">
+                <input class="registration-form__checkbox-marked" type="checkbox" id="rodo" checked>
+                <label for="rodo" class="registration-form__rodo">Chcę otrzymywać newsetter i zapoznałem się z <span
+                        class="registration-form__rodo--rodo-description">informacją o administratorze i przetwarzaniu
+                        danych</span>.</label>
+                <div class="registration-form__rodo-infobox">
                     <p>Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie danych
                         osobowych w celu wysyłania informacji handlowej. </p>
 
@@ -65,14 +66,14 @@
             </div>
 
 
-            <div class="control-buttons">
-                <button class="clear">Wyczyść</button>
-                <button class="send">Wyślij</button>
+            <div class="registration-form__control-buttons">
+                <button class="registration-form__control-button-clear">Wyczyść</button>
+                <button class="registration-form__control-button-send">Wyślij</button>
             </div>
         </div>
-        <div class="popup">
+        <div class="registration-form__popup">
             <p>Twój formularz został poprawnie wysłany :)</p>
-            <button class="close">Zamknij</button>
+            <button class="registration-form__control-button-close">Zamknij</button>
         </div>
     </form>
 

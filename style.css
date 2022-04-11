@@ -23,7 +23,7 @@ body {
 		linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
 }
 
-.wrapper {
+.registration-form {
 	padding: 35px;
 	font-size: 1.6rem;
 	width: 420px;
@@ -32,12 +32,12 @@ body {
 	box-shadow: 0 0 30px rgba(129, 0, 214, 0.45);
 }
 
-h1 {
+.registration-form__header {
 	text-align: center;
 	margin-bottom: 10px;
 }
 
-.line {
+.registration-form__underline {
 	margin: 0 auto;
 	margin-bottom: 30px;
 	height: 6px;
@@ -47,16 +47,16 @@ h1 {
 	border-radius: 6px;
 }
 
-.form-box {
+.registration-form__form-box {
 	margin-bottom: 12px;
 }
 
-.form-box label {
+.registration-form__form-box label {
 	display: inline-block;
 	margin-bottom: 5px;
 }
 
-.form-box input {
+.registration-form__form-box input {
 	width: 100%;
 	padding: 10px;
 
@@ -65,43 +65,43 @@ h1 {
 	border-radius: 6px;
 }
 
-.form-box.error input {
+.registration-form__form-box.error input {
 	border: 1px solid rgb(129, 0, 214);
 	background: rgba(129, 0, 214, 0.09);
 }
 
-.form-box .error-text {
+.registration-form__form-box .error-text {
 	margin: 5px 0 0 10px;
 	font-size: 1.4rem;
 	color: rgb(129, 0, 214);
 	visibility: hidden;
 }
 
-.form-box.error .error-text {
+.registration-form__form-box.error .error-text {
 	visibility: visible;
 }
 
-.rodo-checkbox {
+.registration-form__rodo-checkbox {
 	position: relative;
 	display: flex;
 	font-size: 1.1rem;
 }
 
-.rodo-checkbox .rodo-description {
+.registration-form__rodo--rodo-description {
 	color: rgb(129, 0, 214);
 	text-decoration: underline;
 	cursor: pointer;
 }
 
-.rodo-checkbox input {
+.registration-form__checkbox-marked {
 	cursor: pointer;
 }
 
-.rodo-checkbox .rodo {
+.registration-form__rodo {
 	margin-left: 10px;
 }
 
-.rodo-checkbox .rodo-infobox {
+.registration-form__rodo-infobox {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -120,19 +120,19 @@ h1 {
 	transition: opacity 0.3s;
 }
 
-.rodo-infobox.show-rodo-infobox {
+.registration-form__rodo-infobox.registration-form__rodo-infobox--show {
 	opacity: 1;
 }
 
-.control-buttons {
+.registration-form__control-buttons {
 	display: flex;
 	justify-content: flex-end;
 	margin-top: 22px;
 }
 
-.send,
-.clear,
-.close {
+.registration-form__control-button-send,
+.registration-form__control-button-clear,
+.registration-form__control-button-close {
 	display: block;
 	padding: 10px 0;
 	margin-left: 10px;
@@ -147,13 +147,17 @@ h1 {
 	transition: background-color 0.3s;
 }
 
-.send:hover,
-.clear:hover,
-.close:hover {
+.registration-form__control-button-close {
+	margin-top: 25px;
+}
+
+.registration-form__control-button-send:hover,
+.registration-form__control-button-clear:hover,
+.registration-form__control-button-close:hover {
 	background-color: rgb(75, 0, 124);
 }
 
-.popup {
+.registration-form__popup {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -170,15 +174,11 @@ h1 {
 	transition: top 0.6s;
 }
 
-.popup p {
+.registration-form__popup p {
 	font-size: 2.8rem;
 }
 
-.popup .close {
-	margin-top: 20px;
-}
-
-.show-popup {
+.registration-form__popup--show {
 	top: 50%;
 }
 
